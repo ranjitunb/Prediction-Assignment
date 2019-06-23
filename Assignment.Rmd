@@ -54,7 +54,7 @@ testing  <- read.csv(url(Test))
 # create a partition with the training dataset 
 
 ```{r}
-inTrain  <- createDataPartition(training$classe, p=0.7, list=FALSE)
+inTrain  <- createDataPartition(training$classe, p=0.8, list=FALSE)
 TrainingSet <- training[inTrain, ]
 TestSet  <- training[-inTrain, ]
 dim(TrainingSet)
